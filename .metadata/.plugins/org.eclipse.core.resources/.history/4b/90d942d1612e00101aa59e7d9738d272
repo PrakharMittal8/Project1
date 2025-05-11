@@ -1,0 +1,17 @@
+package Selenium.Automation;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public class Test1 {
+	WebDriver driver;
+	 
+	public Test1(WebDriver driver)
+	{
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy()
+
+}

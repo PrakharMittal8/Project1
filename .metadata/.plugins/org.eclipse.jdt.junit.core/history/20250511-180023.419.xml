@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestClass1" project="Automation" tests="3" started="3" failures="0" errors="1" ignored="0">
+  <testsuite name="Selenium.Automation.TestClass1" time="0.053" displayname="TestClass1" uniqueid="[engine:junit-jupiter]/[class:Selenium.Automation.TestClass1]">
+    <testcase name="LoginTC1" classname="Selenium.Automation.TestClass1" time="0.044" displayname="LoginTC1()" uniqueid="[engine:junit-jupiter]/[class:Selenium.Automation.TestClass1]/[method:LoginTC1()]">
+      <error>java.lang.NullPointerException: Cannot invoke "Selenium.Automation.PageFactoryClass.enterUsername(String)" because "this.PFC" is null&#13;
+	at Selenium.Automation.TestClass1.LoginTC1(TestClass1.java:22)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="LoginTC2" classname="Selenium.Automation.TestClass1" time="0.002" displayname="LoginTC2()" uniqueid="[engine:junit-jupiter]/[class:Selenium.Automation.TestClass1]/[method:LoginTC2()]"/>
+    <testcase name="LoginTC3" classname="Selenium.Automation.TestClass1" time="0.005" displayname="LoginTC3()" uniqueid="[engine:junit-jupiter]/[class:Selenium.Automation.TestClass1]/[method:LoginTC3()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,44 @@
+package Selenium.Automation;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class TestClass1 {
+	WebDriver driver;
+	PageFactoryClass PFC;
+
+	@BeforeMethod(alwaysRun=true)
+	public void setup() {
+		driver = new ChromeDriver();
+		PFC = new PageFactoryClass(driver);
+		driver.get("https://rahulshettyacademy.com/loginpagePractise");
+
+	}
+
+	@Test()
+	public void LoginTC1() {
+		PFC.enterUsername("rahulshettyacademy");
+		PFC.enterPassword("learning");
+		PFC.clickSignIN();
+		System.out.println("I am Login TC1");
+	}
+
+	@Test()
+	public void LoginTC2() {
+		System.out.println("I am Login TC2");
+	}
+
+	@Test()
+	public void LoginTC3() {
+		System.out.println("I am Login TC3");
+	}
+
+	@AfterMethod(alwaysRun=true)
+	public void TearDown() {
+		driver.quit();
+	}
+
+}

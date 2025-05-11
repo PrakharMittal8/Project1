@@ -1,0 +1,11 @@
+package Selenium.Automation;
+
+import org.openqa.selenium.WebDriver;
+
+public class TestClass1 {
+	WebDriver driver;
+	PageFactoryClass PFC;
+	
+	
+
+}
