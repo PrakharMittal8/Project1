@@ -40,11 +40,6 @@ public class TestClass1 {
 	public void LoginTC4() {
 		System.out.println("I am Login TC4");
 	}
-	
-	@Test()
-	public void LoginTC5() {
-		System.out.println("I am Login TC5");
-	}
 
 	@AfterMethod(alwaysRun=true)
 	public void TearDown() {
