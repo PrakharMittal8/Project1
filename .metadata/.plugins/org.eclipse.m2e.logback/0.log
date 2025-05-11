@@ -1119,3 +1119,7 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Duplicated 
 2025-05-11 19:40:31,647 [Worker-25: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: FrameWork:MyTest:0.0.1-SNAPSHOT @ E:\CentralRepo\Automation\pom.xml.
 2025-05-11 19:40:34,633 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\CentralRepo\Automation\src\main\resources
 2025-05-11 19:40:34,650 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\CentralRepo\Automation\src\test\resources
+2025-05-11 22:30:37,102 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\CentralRepo\Automation\src\main\resources
+2025-05-11 22:30:37,106 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\CentralRepo\Automation\src\test\resources
+2025-05-11 22:33:54,260 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\CentralRepo\Automation\src\main\resources
+2025-05-11 22:33:54,270 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory E:\CentralRepo\Automation\src\test\resources

@@ -46,7 +46,7 @@ public class TestClass1 {
 		System.out.println("I am Login TC5");
 	}
 
-	@Test(enabled=false)
+	@Test()
 	public void LoginTC6() {
 		System.out.println("I am Login TC6");
 	}
