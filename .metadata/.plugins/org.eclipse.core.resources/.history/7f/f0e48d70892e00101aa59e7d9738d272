@@ -10,7 +10,7 @@ public class TestClass1 {
 	WebDriver driver;
 	PageFactoryClass PFC;
 
-	@BeforeMethod(alwaysRun = true)
+	@BeforeMethod(alwaysRun=true)
 	public void setup() {
 		driver = new ChromeDriver();
 		PFC = new PageFactoryClass(driver);
@@ -35,23 +35,18 @@ public class TestClass1 {
 	public void LoginTC3() {
 		System.out.println("I am Login TC3");
 	}
-
+	
 	@Test()
 	public void LoginTC4() {
 		System.out.println("I am Login TC4");
 	}
-
+	
 	@Test()
 	public void LoginTC5() {
 		System.out.println("I am Login TC5");
 	}
 
-	@Test()
-	public void LoginTC6() {
-		System.out.println("I am Login TC6");
-	}
-
-	@AfterMethod(alwaysRun = true)
+	@AfterMethod(alwaysRun=true)
 	public void TearDown() {
 		driver.quit();
 	}
