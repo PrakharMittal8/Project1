@@ -39,11 +39,6 @@ public class TestAPI {
 	{
 		System.out.println(a+" : "+b);
 	}
-	@Test(dataProvider="values")
-	public void method3(String a, String b)
-	{
-		System.out.println(a+" : "+b);
-	}
 //	public static void main(String[] args) {
 
 //		given().when()
