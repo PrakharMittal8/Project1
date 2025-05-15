@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  <parameter name="UserName" value="Prakhar"/>
+	   <parameter name="UserName" value="Prakhar1"/>
+	  <parameter name="Password" value="Mittal"/>
+	  <parameter name="Password" value="Mittal1"/>
+	  <classes>
+		  <class name = "Selenium.Automation.TestAPI"/>
+	  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

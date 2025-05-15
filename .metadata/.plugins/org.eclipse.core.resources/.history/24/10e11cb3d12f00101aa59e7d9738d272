@@ -1,0 +1,19 @@
+package Selenium.Automation;
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+
+
+
+public class TestAPI {
+
+	public static void main(String[] args) {
+		given().
+		when().get("https://jsonplaceholder.typicode.com/posts/1").
+		then().
+		 statusCode(201).
+         body("title", equalTo("sunt aut facere repellat provident occaecati excepturi optio reprehenderit"));
+ 
+		
+	}
+
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Selenium.Automation.TestAPI" tests="3" started="3" failures="0" errors="0" ignored="1">
+  <testsuite name="Selenium.Automation.TestAPI" time="0.009">
+    <testcase name="method2" classname="Selenium.Automation.TestAPI" time="0.002"/>
+    <testcase name="method2" classname="Selenium.Automation.TestAPI" time="0.007"/>
+    <testcase name="method1" classname="Selenium.Automation.TestAPI" ignored="true"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,87 @@
+package Selenium.Automation;
+
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+
+
+public class TestAPI {
+	@Parameters({"UserName", "Password"})
+	@Test()
+	public void method1(String a, String b)
+	{
+		System.out.println(a+" : "+b);
+	}
+
+	@DataProvider(name="values")
+	public Object[][] namedp()
+	{
+		return new Object[][]{
+				{"Prakhar", "Mittal"},
+				{"Prakhar1", "Mittal1"}
+	};
+	}
+	
+	@Test(dataProvider="values")
+	public void method2(String a, String b)
+	{
+		System.out.println(a+" : "+b);
+	}
+//	public static void main(String[] args) {
+
+//		given().when()
+//				.get("https://demo.guru99.com/V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234!&Account_No=1")
+//				.then().log().all();
+//		System.out.println("---------------------------");
+//
+//		given().queryParam("CUSTOMER_ID", "68195").queryParam("PASSWORD", "1234!").queryParam("Account_No", "1").when()
+//				.get("https://demo.guru99.com/V4/sinkministatement.php").then().log().all();
+//		System.out.println("---------------------------");
+//
+//		given().queryParam("CUSTOMER_ID", "68195").queryParam("PASSWORD", "1234!").queryParam("Account_No", "1").when()
+//				.get("https://demo.guru99.com/V4/sinkministatement.php").then().log().body();
+//		System.out.println("---------------------------");
+
+//		final String url = "https://demo.guru99.com/V4/sinkministatement.php";
+//		int statusCode = given().queryParam("CUSTOMER_ID", "68195").queryParam("PASSWORD", "1234!")
+//				.queryParam("Account_No", "1").when().get(url)
+//				.getStatusCode();
+//		System.out.println("The response status is " + statusCode);
+//
+//		given().when().get(url).then().assertThat().statusCode(200);
+//		System.out.println("---------------------------");
+
+		// System.out.println(given().when().get(url).then().extract().headers());
+
+//		System.out.println(given().when().get(url).timeIn(TimeUnit.MILLISECONDS));
+//		 System.out.println("The content type of response: "+
+//		           get(url).then().extract()
+//		              .contentType());
+		 
+////		 
+//		 WebDriver driver = new ChromeDriver();
+//		 driver.get("https://www.google.com");	 
+//		 driver.findElement(By.xpath("//*[@title='Search']")).sendKeys("Hello");
+//		 Actions a = new Actions(driver);
+//		Keys KeyCom=Keys.ENTER;
+//		 a.sendKeys(KeyCom).build().perform();
+		
+		 
+		 
+		 
+
+//	}
+
+}

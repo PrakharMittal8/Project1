@@ -1,0 +1,22 @@
+package Selenium.Automation;
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+
+import org.openqa.selenium.support.decorators.WebDriverDecorator;
+
+
+
+public class TestAPI {
+
+	public static void main(String[] args) {
+		  given().queryParam("CUSTOMER_ID","68195")
+          .queryParam("PASSWORD","1234!")
+          .queryParam("Account_No","1").
+		  when().get("https://demo.guru99.com/V4/sinkministatement.php?").
+		  then().log().all();
+		  
+		 
+		  
+	}
+
+}

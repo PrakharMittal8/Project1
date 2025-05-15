@@ -1,0 +1,26 @@
+package Selenium.Automation;
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+
+import org.openqa.selenium.support.decorators.WebDriverDecorator;
+
+
+
+public class TestAPI {
+
+	public static void main(String[] args) {
+		  try {
+	            given().
+	            when().get("https://jsonplaceholder.typicode.com/posts/1").
+	            then().
+	                statusCode(201).  // Intentionally incorrect to trigger exception
+	                body("title", equalTo("sunt aut facere repellat provident occaecati excepturi optio reprehenderit"));
+	        } catch (Throwable e) {
+	            System.out.println("Inside catch block:");
+	            e.printStackTrace();  // Proper way to print the stack trace
+	        }
+		 
+		  
+	}
+
+}
